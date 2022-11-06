@@ -18,7 +18,7 @@ class LandMarkController extends GetxController {
         longitude: -122.409981,
         tag: "Ocean",
         imageUrl:
-            "https://dl.airtable.com/.attachments/2d15eb877a38bde0a5ea167eca76bdb6/c8f15ee2/image-from-rawpixel-id-6075083-jpeg.jpg",
+            "https://bafybeiber25qv2uot5jqbywrqbgk36p3p3rx2wipb27g7bwpidjwq6eqtm.ipfs.nftstorage.link/",
         description: "Nice place with awesome views"),
     Landmark(
         name: 'Golden Gate Bridge',
@@ -26,7 +26,7 @@ class LandMarkController extends GetxController {
         longitude: 122.478300,
         tag: "Ocean",
         imageUrl:
-            "https://dl.airtable.com/.attachments/e808629abaa22161120fd2597a900e3b/eb2974cd/image-from-rawpixel-id-3285711-jpeg.jpg",
+            "https://bafybeie2dw4hnnfnnto5zqovjxlog2cn4bvvd6dpfy6vqz4lugpa5t2ibm.ipfs.nftstorage.link/",
         description: "Nice place with awesome views"),
     Landmark(
         name: 'Palace of Fine Arts',
@@ -34,7 +34,7 @@ class LandMarkController extends GetxController {
         longitude: 122.478300,
         tag: "Statue",
         imageUrl:
-            "https://dl.airtable.com/.attachments/e808629abaa22161120fd2597a900e3b/eb2974cd/image-from-rawpixel-id-3285711-jpeg.jpg",
+            "https://bafkreif6yp4izfxrmxqspao4iwmfyyalv4cjqwod5amfv366qolgy5vciq.ipfs.nftstorage.link",
         description: "See the beautiful statues at the palace")
   ];
 
