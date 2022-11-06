@@ -20,8 +20,8 @@ void main() {
         onTap: (index) {
           homeController.updatePage(index);
         },
-        items: <BottomNavigationBarItem>[
-          const BottomNavigationBarItem(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
             icon: Icon(
               Icons.map,
               color: Colors.red,
@@ -36,8 +36,8 @@ void main() {
       ),
       body: Obx(() => homeController.pages[homeController.currentPage.value]),
     ),
-    getPages: [
-      GetPage(name: '/maps', page: () => MapScreen()),
-    ],
+    // getPages: [
+    //   GetPage(name: '/maps', page: () => MapScreen()),
+    // ],
   ));
 }

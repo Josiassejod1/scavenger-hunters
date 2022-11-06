@@ -22,27 +22,28 @@ class ScavengerCard extends StatelessWidget {
               );
             }));
       },
-      child: Container(
-        child: Card(
-          child: Column(
-            children: [
-              Image.network(landmark.imageUrl, width: 300, height: 300,),
-              Text(
-                landmark.name,
-                style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    "# ${landmark.tag}",
-                    style:
-                        TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
-                  ),
-                ],
-              )
-            ],
-          ),
+      child: Card(
+        semanticContainer: true,
+        clipBehavior: Clip.antiAliasWithSaveLayer,
+        child: Column(
+          children: [
+            Image.network(landmark.imageUrl, height: 200,),
+            Text(
+              landmark.name,
+              style:
+                  TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "# ${landmark.tag}",
+                  style: TextStyle(
+                      color: Colors.red, fontWeight: FontWeight.bold),
+                ),
+              ],
+            )
+          ],
         ),
       ),
     );

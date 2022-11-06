@@ -12,12 +12,8 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.put(LandMarkController());
 
-    return ListView.builder(
-        itemCount: 3,
-        itemBuilder: (context, index) {
-          return ScavengerCard(landmark: controller.landmarks[index]);
-        });
+
+    return MapScreen();
   }
 }

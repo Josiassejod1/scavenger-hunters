@@ -1,9 +1,4 @@
-import 'dart:developer';
-
-import 'package:dart_airtable/dart_airtable.dart';
-import 'package:dotenv/dotenv.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
-import 'package:scavenger/air_table_client.dart';
 import 'package:scavenger/models/landmark.dart';
 
 class LandMarkController extends GetxController {
