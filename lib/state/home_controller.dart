@@ -9,7 +9,7 @@ import 'package:scavenger/components/map_screen.dart';
 class HomeController extends GetxController {
    final List<Widget> pages = [
     HomeScreen(),
-    const MapScreen()
+  //  const MapScreen()
   ];
 
   final Rx<int> currentPage = 0.obs;

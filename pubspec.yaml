@@ -41,6 +41,8 @@ dependencies:
   get: ^4.6.5
   dart_airtable: ^1.1.0
   dotenv: ^4.0.1
+  latlong2: ^0.8.1
+  location: ^4.2.0
   
   
   
