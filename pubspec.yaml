@@ -37,7 +37,11 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   flutter_web3: ^2.1.9
+  flutter_map: ^3.0.0
   get: ^4.6.5
+  dart_airtable: ^1.1.0
+  dotenv: ^4.0.1
+  
   
   
 

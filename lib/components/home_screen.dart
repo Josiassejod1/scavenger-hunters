@@ -1,36 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:get/get.dart';
+import 'package:scavenger/components/map_screen.dart';
 import 'package:scavenger/components/scavenger_card.dart';
+import 'package:scavenger/state/home_controller.dart';
+import 'package:scavenger/state/land_mark_controller.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+  HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Scavenger Hunter'),
-      ),
-      backgroundColor: Colors.white,
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.map),
-            label: 'Open Hunts',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.camera),
-            label: 'Camera',
-          ),
-        ],
-      ),
-      body: SafeArea(
-          child: ListView.builder(
-              itemCount: 3,
-              itemBuilder: (context, index) {
-                return ScavengerCard();
-              })),
-    );
+    final controller = Get.put(LandMarkController());
+
+    return ListView.builder(
+        itemCount: 3,
+        itemBuilder: (context, index) {
+          return ScavengerCard(landmark: controller.landmarks[index]);
+        });
   }
 }
