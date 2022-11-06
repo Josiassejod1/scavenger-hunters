@@ -17,6 +17,11 @@ class LandMarkController extends GetxController {
         latitude: 37.809326,
         longitude: -122.409981,
         tag: "Ocean",
+        tasks: [
+           "Take a picture of a sea lion",
+           "Take a picture of the ferris wheel",
+           "Snap a picture of a ship"
+        ],
         imageUrl:
             "https://bafybeiber25qv2uot5jqbywrqbgk36p3p3rx2wipb27g7bwpidjwq6eqtm.ipfs.nftstorage.link/",
         description: "Nice place with awesome views"),
@@ -24,6 +29,10 @@ class LandMarkController extends GetxController {
         name: 'Golden Gate Bridge',
         latitude: 37.818500,
         longitude: 122.478300,
+        tasks: [
+          "take a picture of the bridge",
+          "take a picture of mountain"
+        ],
         tag: "Ocean",
         imageUrl:
             "https://bafybeie2dw4hnnfnnto5zqovjxlog2cn4bvvd6dpfy6vqz4lugpa5t2ibm.ipfs.nftstorage.link/",
@@ -33,6 +42,9 @@ class LandMarkController extends GetxController {
         latitude: 37.818500,
         longitude: 122.478300,
         tag: "Statue",
+        tasks: [
+          "take a picture of a statue"
+        ],
         imageUrl:
             "https://bafkreif6yp4izfxrmxqspao4iwmfyyalv4cjqwod5amfv366qolgy5vciq.ipfs.nftstorage.link",
         description: "See the beautiful statues at the palace")

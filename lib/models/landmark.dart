@@ -5,6 +5,7 @@ class Landmark {
   String description;
   String tag;
   String imageUrl;
+  List<String> tasks;
 
   Landmark({
     required this.name,
@@ -12,6 +13,7 @@ class Landmark {
     required this.longitude,
     required this.tag,
     required this.imageUrl,
-    required this.description
+    required this.description, 
+    required this.tasks
   });
 }

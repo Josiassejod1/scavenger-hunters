@@ -17,7 +17,22 @@ class ScavengerCard extends StatelessWidget {
             builder: ((context) {
               return AlertDialog(
                 content: Container(
-                  child: Text(landmark.description),
+                  child: Column(
+                    children: [
+                      Text(landmark.description),
+                      ...landmark.tasks.map((task) => CheckboxListTile(
+                            onChanged: ((value) => value),
+                            title: const Text('Tasks'),
+                            subtitle: Text(task),
+                            secondary: const Icon(Icons.star),
+                            autofocus: false,
+                            activeColor: Colors.green,
+                            checkColor: Colors.white,
+                            selected: false,
+                            value: true,
+                          )),
+                    ],
+                  ),
                 ),
               );
             }));
@@ -27,19 +42,21 @@ class ScavengerCard extends StatelessWidget {
         clipBehavior: Clip.antiAliasWithSaveLayer,
         child: Column(
           children: [
-            Image.network(landmark.imageUrl, height: 200,),
+            Image.network(
+              landmark.imageUrl,
+              height: 200,
+            ),
             Text(
               landmark.name,
-              style:
-                  TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+              style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
                   "# ${landmark.tag}",
-                  style: TextStyle(
-                      color: Colors.red, fontWeight: FontWeight.bold),
+                  style:
+                      TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
                 ),
               ],
             )
