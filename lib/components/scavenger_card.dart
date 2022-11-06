@@ -10,6 +10,7 @@ class ScavengerCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final List fixedList = Iterable<int>.generate(landmark.tasks.length).toList();
     return GestureDetector(
       onTap: () {
         showDialog(
@@ -20,9 +21,9 @@ class ScavengerCard extends StatelessWidget {
                   child: Column(
                     children: [
                       Text(landmark.description),
-                      ...landmark.tasks.map((task) => CheckboxListTile(
+                      ...fixedList.map((task) => CheckboxListTile(
                             onChanged: ((value) => value),
-                            title: const Text('Tasks'),
+                            title:  Text('Task ${landmark.tasks[task]}'),
                             subtitle: Text(task),
                             secondary: const Icon(Icons.star),
                             autofocus: false,
